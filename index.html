@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대전 공용자전거 타슈</title>
+    <script src='https://code.jquery.com/jquery-latest.min.js'></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/25444b223e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/768style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <section class="container">
+            <!-- 로고 -->
+            <div id="logo">
+                <!-- 흐르는 텍스트 + 로고 -->
+                <h1 class="flow-container">
+                    <!-- 흐르는 택스트 -->
+                    <div class="hideMo flow-text">
+                        <div class="flow-wrap">누구나 이용 가능해유! 타슈를 타보슈! 건강한 도시, 대전이에유!<br>타슈를 타보슈! 건강한 도시, 대전이에유! 누구나 이용 가능해유!<br>건강한 도시, 대전이에유! 누구나 이용 가능해유! 타슈를 타보슈!<br>누구나 이용 가능해유! 타슈를 타보슈! 건강한 도시, 대전이에유!<br>타슈를 타보슈! 건강한 도시, 대전이에유! 누구나 이용 가능해유!</div>
+                        <div class="flow-wrap">누구나 이용 가능해유! 타슈를 타보슈! 건강한 도시, 대전이에유!<br>타슈를 타보슈! 건강한 도시, 대전이에유! 누구나 이용 가능해유!<br>건강한 도시, 대전이에유! 누구나 이용 가능해유! 타슈를 타보슈!<br>누구나 이용 가능해유! 타슈를 타보슈! 건강한 도시, 대전이에유!<br>타슈를 타보슈! 건강한 도시, 대전이에유! 누구나 이용 가능해유!</div>
+                    </div>
+                    <!-- 로고 -->
+                    <a href="#"><img src="img/logo.svg" alt="대전 시민공영자전거 타슈"></a>
+                    <!-- 모바일용 문장 -->
+                    <div class="text hidePC">
+                        <h6>대전, 자전거 타슈!</h6>
+                        <p>
+                            자전거 주행이 가능하다면<br>
+                            누구나 이용할 수 있는 자전거
+                        </p>
+                    </div>
+                </h1>
+                <!-- 모바일용 버튼 -->
+                <button class="gohome hidePC">타슈 타러 가기</button>
+                <ul class="mo-lang hidePC">
+                    <li class="lang-btn">
+                        <a href="#" onclick="return false">Language</a>
+                        <ul class="lang-list">
+                            <li><a href="index.html" class="kr">한국어</a></li>
+                            <li><a href="index_en.html" class="en">English</a></li>
+                            <li><a href="#" class="cn">中國語</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <!-- 모바일용 배경 -->
+                <div class="videoBG hidePC">
+                    <video class="videoBG__content" autoplay muted loop>
+                        <source src="video/85339-590730585_medium.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+            </div>
+            <div class="lang hideMo">
+                <a href="#" onclick="return false">Language</a>
+                <ul class="lang-list">
+                    <li><a href="index.html" class="kr">
+                        <div class="icon" style="background: url(img/lang-kr.png) center/cover no-repeat;"></div>
+                        <span>한국어</span>
+                    </a></li>
+                    <li><a href="#" class="en">
+                        <div class="icon" style="background: url(img/lang-en.png) center/cover no-repeat;"></div>
+                        <span>English</span>
+                    </a></li>
+                    <li><a href="#" class="cn">
+                        <div class="icon" style="background: url(img/lang-cn.png) center/cover no-repeat;"></div>
+                        <span>中國語</span>
+                    </a></li>
+                </ul>
+            </div>
+            <!-- 앱 다운로드 -->
+            <article class="appDown">
+                <a href="#" onclick="return false">
+                    <img src="img/google-play.svg" alt="google Play">
+                    <span data-name="타슈 ">Google Play 다운로드</span>
+                </a>
+                <a href="#" onclick="return false">
+                    <img src="img/app-store.svg" alt="APP Stroe">
+                    <span data-name="타슈 ">APP Store 다운로드</span>
+                </a>
+            </article>
+            <!-- 고객 문의 -->
+            <article class="contact">
+                <ul>
+                    <li id="notice">
+                        <h4>
+                            공지사항
+                            <a href="#">+ MORE</a>
+                        </h4>
+                        <ul class="notice">
+                            <li><a href="#">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span class="contText">(알림)신탄진고네거리 대여소 이전 알림(신탄진고네거리 → 신탄진고정문) / 9.26.(화)</span>
+                                <span class="date">2023-09-26</span>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span class="contText">★★★ 타슈 대여소에 반드시 반납해주세요!!!(타슈 앱에 보이는 대여소)</span>
+                                <span class="date">2023-08-02</span>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span class="contText">★ 지도에 표시되는 자전거 위치는 실제와 다를 수 있습니다</span>
+                                <span class="date">2023-08-02</span>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span class="contText">공영자전거 타슈 이용약관 개정 알림</span>
+                                <span class="date">2023-08-02</span>
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li id="quest">
+                        <h4>
+                            자주 묻는 질문
+                            <a href="#">+ MORE</a>
+                        </h4>
+                        <ul class="quest">
+                            <li><a href="#">
+                                <i class="fa-solid fa-q"></i>
+                                <span class="contText">자전거를 대여한 곳에만 반납해야 하나요?</span>
+                                <button class="questBtn">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                            </a></li>
+                            <div class="answer">
+                                아닙니다. 자전거를 대여한 곳에 꼭 반납하실 필요는 없습니다. 자전거를 이용하신 후 가까운 어느 대여소에서라도 반납이 가능합니다. 예를 들어 대전시청에서 자전거를 대여하여 타임월드 방향으로 이동하였다면 타임월드 근처에 있는 대여소에 반납하시면 됩니다.
+                            </div>
+                            <li><a href="#">
+                                <i class="fa-solid fa-q"></i>
+                                <span class="contText">대여소란 무엇인가요?</span>
+                                <button class="questBtn">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                            </a></li>
+                            <div class="answer">
+                                대여소는 공영자전거 타슈를 대여하고 반납하는 무인대여소입니다.<br>
+                                타슈 앱에서 대여소의 위치를 확인해보세요.
+                            </div>
+                            <li><a href="#">
+                                <i class="fa-solid fa-q"></i>
+                                <span class="contText">자가잠금기능이 무엇인가요?</span>
+                                <button class="questBtn">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                            </a></li>
+                            <div class="answer">
+                                자전거 이용 중 자전거를 세워두고 다른 일을 보실 때, 자전거 분실 및 도난을 방지하기 위해 잠시 자전거를 잠금하는 기능입니다. 이용시간으로 인정되어 추가 사용료가 발생될 수 있습니다. 잠그는 위치가 대여소면 반납처리 됩니다.
+                            </div>
+                            <li><a href="#">
+                                <i class="fa-solid fa-q"></i>
+                                <span class="contText">앱에서 대여하기 버튼을 눌렀으나 대여 신청이 안 돼요.</span>
+                                <button class="questBtn">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                            </a></li>
+                            <div class="answer">
+                                고객님의 스마트폰의 블루투스 기능이 활성화 되어 있는지 확인해주세요.<br>
+                                또한 단말기에 배터리가 없거나 장치에 문제가 있는 경우, 대여오류가 발생될 수 있습니다.
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <article class="slide">
+                <ul>
+                    <li class="slideList" style="--slideIdx: 3">
+                        <img src="img/slide_icon1.png" alt="">
+                        <h4>대전광역시 공영자전거 '타슈'</h4>
+                        <h2><span>건강한 자전거</span> 도시</h2>
+                        <p>녹색 성장을 선도하는 타슈 자전거 대여 시스템은<br> 자전거 이용의 생활화를 통한 시민건강 증진을 실현합니다.</p>
+                    </li>
+                    <li class="slideList" style="--slideIdx: 2">
+                        <img src="img/slide_icon2.png" alt="">
+                        <h4>대전광역시 공영자전거 '타슈'</h4>
+                        <h2><span>깨끗한 자전거</span> 도시</h2>
+                        <p>녹색 성장을 선도하는 타슈 자전거 대여 시스템은<br> 자전거 교통수단 분담률을 향상시켜 CO2 발생 감소를 실현합니다.</p>
+                    </li>
+                    </li>
+                    <li class="slideList" style="--slideIdx: 1">
+                        <img src="img/slide_icon3.png" alt="">
+                        <h4>대전광역시 공영자전거 '타슈'</h4>
+                        <h2><span>녹색성장 선도</span> 도시</h2>
+                        <p>녹색 성장을 선도하는 타슈 자전거 대여 시스템은<br> 국가 비전인 "저탄소 녹색성장"을 실현합니다.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="contents">
+            <!-- 타슈 정보 -->
+            <article class="adoutTashu acitvePC">
+                <div class="conText">
+                    <i class="fa-solid fa-bicycle"></i>
+                    <h3><span>타슈</span></h3>
+                    <p>무인대여시스템 공영자전거 타슈는 만 15세 이상,<br>자전거 주행이 가능하면 누구나 이용하실 수 있어요</p>
+                </div>
+                <div class="mo-conText hidePC">
+                    <i class="fa-solid fa-bicycle"></i>
+                    <div>
+                        <h3><span>타슈</span></h3>
+                        <p>무인대여시스템 공영자전거 타슈는 만 15세 이상,<br>자전거 주행이 가능하면 누구나 이용하실 수 있어요</p>
+                    </div>
+                </div>
+                <div class="contentForm hideMo">
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/station_img01.png" alt="스마트락">
+                        </div>
+                        <h5>스마트락</h5>
+                    </a>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/station_img02.png" alt="공영자전거">
+                        </div>
+                        <h5>공영자전거</h5>
+                    </a>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/station_img03.png" alt="대여소거치대(5대)">
+                        </div>
+                        <h5>대여소 거치대(5대)</h5>
+                    </a>
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/station_img04.png" alt="대여소 거치대(1대)">
+                        </div>
+                        <h5>대여소 거치대(1대)</h5>
+                    </a>
+                </div>
+                <div class="mo-contentForm hidePC">
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="img">
+                                    <img src="img/station_img01.png" alt="스마트락">
+                                </div>
+                                <h5>스마트락</h5>
+                                <p class="formInfo">
+                                    스마트락은 자전거의 뒷바퀴에 부착하는 잠금장치이며 서비스 서버와의<br>통신을 통하여 QR코드로 스마트폰을 이용한 대여기능을 지원합니다.
+                                </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img">
+                                    <img src="img/station_img02.png" alt="공영자전거">
+                                </div>
+                                <h5>공영자전거</h5>
+                                <p class="formInfo">
+                                    공영자전거는 누구나 편리하게 이용할 수 있도록 설계되었으며,<br>내구성이 강한 소재를 적용하여 안전과 편의성을 최대한 반영하였습니다.
+                                </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img">
+                                    <img src="img/station_img03.png" alt="대여소거치대(5대)">
+                                </div>
+                                <h5>대여소 거치대(5대)</h5>
+                                <p class="formInfo">
+                                    공영자전거 타슈는 대여소로 지정된 장소에서만 이용하실 수 있으며<br>대여소에 설치된 5대용 거치대입니다.
+                                </p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img">
+                                    <img src="img/station_img04.png" alt="대여소 거치대(1대)">
+                                </div>
+                                <h5>대여소 거치대(1대)</h5>
+                                <p class="formInfo">
+                                    공영자전거 타슈는 대여소로 지정된 장소에서만 이용하실 수 있으며<br>대여소에 설치된 1대용 거치대입니다.
+                                </p>
+                            </li>
+                        </ul>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="adout-pop hideMo">
+                    <ul>
+                        <!-- 스마트락 -->
+                        <li class="pop-top">
+                            <div class="back">
+                                <div class="bg" style="--pop-bg: url(../img/station_img01.png);"></div>
+                                <button><i class="fa-solid fa-x"></i></button>
+                                <div class="pop-info">
+                                    <h5>스마트락</h5>
+                                    <p>
+                                        스마트락은 자전거의 뒷바퀴에 부착하는 잠금장치이며 스마트폰 및 서비스 서버와의 통신을 통하여 승인된 사용자인 경우 위 부분에 있는 QR코드로 스마트폰을 이용한 대여기능을 지원합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 공영자전거 -->
+                        <li class="pop-top">
+                            <div class="back">
+                                <div class="bg" style="--pop-bg: url(../img/station_img02.png);"></div>
+                                <button><i class="fa-solid fa-x"></i></button>
+                                <div class="pop-info">
+                                    <h5>공영자전거</h5>
+                                    <p>
+                                        공영자전거는 누구나 편리하게 이용할 수 있도록 설계되었으며, 내구성이 강한 소재를 적용하여 안전과 편의성을 최대한 반영하였습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 거치대 5대 -->
+                        <li class="pop-bottom">
+                            <div class="back">
+                                <div class="bg" style="--pop-bg: url(../img/station_img03.png);"></div>
+                                <button><i class="fa-solid fa-x"></i></button>
+                                <div class="pop-info">
+                                    <h5>대여소 거치대(5대)</h5>
+                                    <p>
+                                        공영자전거 타슈는 대여소로 지정된 장소에서만 이용하실 수 있으며 대여소에 설치된 5대용 거치대입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 거치대 1대 -->
+                        <li class="pop-bottom">
+                            <div class="back">
+                                <div class="bg" style="--pop-bg: url(../img/station_img04.png);"></div>
+                                <button><i class="fa-solid fa-x"></i></button>
+                                <div class="pop-info">
+                                    <h5>대여소 거치대(1대)</h5>
+                                    <p>
+                                        공영자전거 타슈는 대여소로 지정된 장소에서만 이용하실 수 있으며 대여소에 설치된 5대용 거치대입니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- 이용 안내 -->
+            <article class="using acitvePC">
+                <div class="conText">
+                    <i class="fa-solid fa-hand"></i>
+                    <h3><span>이용</span>안내</h3>
+                    <p>타슈를 대여 및 반납 방법은<br>타슈 이용 안내를 확인해 주세요</p>
+                </div>
+                <div class="mo-conText hidePC">
+                    <i class="fa-solid fa-hand"></i>
+                    <div>
+                        <h3><span>이용</span>안내</h3>
+                        <p>타슈를 사용하는 방법을 확인해 주세요</p>
+                    </div>
+                </div>
+                <div class="contentForm">
+                    <ul class="conTitle">
+                        <li class="active"><a href="#" onclick="return false">이용 방법</a></li>
+                        <li class=""><a href="#" onclick="return false">반납 방법</a></li>
+                        <li class=""><a href="#" onclick="return false">서비스 안내</a></li>
+                    </ul>
+                    <ul class="conBox">
+                        <li class="active">
+                            <div class="swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="img/util_img01.png" alt="이용방법 1">
+                                        <h5>STEP 1</h5>
+                                        <p>‘타슈’ 앱에서 대여하기 버튼을 누른 후,<br>
+                                            자전거 뒤쪽의 QR코드를 스캔해주세요.</p>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/util_img02.png" alt="이용방법 2">
+                                        <h5>STEP 2</h5>
+                                        <p>대여 시작 메시지와 함께<br>
+                                            자전거의 잠금이 해제돼요.</p>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/util_img03.png" alt="이용방법 3">
+                                        <h5>STEP 3</h5>
+                                        <p>즐거운 자전거 운행!<br>
+                                            안전운행 하세요.</p>
+                                    </li>
+                                </ul>
+                                <!-- 얖옆버튼 -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <!-- 순서 파악 스크롤바 -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="img/return_img01.png" alt="반납방법 1">
+                                        <h5>STEP 1</h5>
+                                        <p>가까운 “타슈 대여소”를 찾아주세요.</p>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/return_img02.png" alt="반납방법 2">
+                                        <h5>STEP 2</h5>
+                                        <p>자전거 뒷 부분에 있는 잠금장치를<br>잠근 후 잠시만 기다려주세요.</p>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/return_img03.png" alt="반납방법 3">
+                                        <h5>STEP 3</h5>
+                                        <p>전송된 반납완료 메시지(알림톡, 휴대폰문자)를<br><b>꼭</b> 확인하시고, 이동하여 주세요.</p>
+                                    </li>
+                                </ul>
+                                <!-- 얖옆버튼 -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <!-- 순서 파악 스크롤바 -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide time">
+                                        <img src="img/time.png" alt="이용안내">
+                                        <h5>이용안내</h5>
+                                        <ul>
+                                            <li><b>이용대상</b>만 15세 이상 자전거 주행이 가능한 자</li>
+                                            <li><b>대여시간</b>05시 ~ 24시</li>
+                                            <li><b>반납시간</b>24시간, 언제든지</li>
+                                            <li>※ 이용 성수기인 3월부터 11월까지는 24시간 운영합니다.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="swiper-slide time">
+                                        <img src="img/time-money.png" alt="요금안내">
+                                        <h5>요금안내</h5>
+                                        <ul>
+                                            <li><b>기본 사용료</b>1시간 무료</li>
+                                            <li><b>추가 사용료</b>30분당 500원 / 1일 1회당 최대 추가 사용료는 5,000원</li>
+                                            <li>* 1시간 내 반납 후 재대여하면 추가요금 없이 반복 이용 가능</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- 얖옆버튼 -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <!-- 순서 파악 스크롤바 -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- 대여소 조회 -->
+            <article class="map acitvePC">
+                <div class="conText">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3><span>대여소</span>조회</h3>
+                    <p>타슈 대여소와 자전거 정보를<br>조회할 수 있어요</p>
+                </div>
+                <div class="mo-conText hidePC">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3><span>대여소</span>조회</h3>
+                        <p>타슈 대여소와 자전거 정보를 조회할 수 있어요</p>
+                    </div>
+                </div>
+                <div class="contentForm">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10807.457120057687!2d127.36102075859424!3d36.358932507902296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654b805fd1fe65%3A0xb6d47297a6b722a9!2z7YOA7IqIIOyKpO2FjOydtOyFmCAxMi4g7KCV67aA7LKt7IKs7JetIDTrsojstpzqtaw!5e0!3m2!1sko!2skr!4v1713842419130!5m2!1sko!2skr" width="100%" height="100%" style="border:0; outline: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div class="comInfo">
+                <ul class="link">
+                    <li><a href="#">서비스 이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                </ul>
+                <p>
+                    대전광역시청 (35242) 대전광역시 서구 둔산로 100(둔산동) 대표자 : 이장우 / 사업자등록번호 : 305-83-00024<br>대전교통공사 (35279) 대전광역시 서구 월드컵대로 480(월평동) / 대표자 : 연규양 / 사업자등록번호 : 314-82-10117<br>
+                    관제센터 : 1899-2282 / 팩스 : (042)539-3239<br>
+                    <span>Copyright © 2012 대전광역시, 대전교통공사. All Rights Reserved.</span>
+                </p>
+            </div>
+            <div class="cotrolCen">
+                <i></i>
+                <div class="text">
+                    <h3>관제센터</h3>
+                    <span>1899-2282</span>
+                </div>
+                <a href="tel:0000-0000" class="callBtn hidePC"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

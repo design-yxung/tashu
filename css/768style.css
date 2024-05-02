@@ -1,0 +1,429 @@
+@media (max-width: 768px){
+    html,body{overflow: auto;}
+    ::-webkit-scrollbar {display: none;}
+
+    /* 반응형 */
+    .hidePC{display: block;}
+    .hideMo{display: none !important;}
+
+    /* 웹 스타일 지정 */
+    #wrap{width: 100%; height: auto; padding: 0;}
+    #wrap>section>*{border-radius: 0;}
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: normal;
+    }
+    .container article{
+    }
+    /* 로고 */
+    .container #logo{
+        position: relative;
+        width: 100vw; height: 100vh;
+        background-color: #fff;
+        overflow: hidden;
+    }
+    .container #logo:hover{
+        background-color: #fff;
+    }
+    .container #logo>h1{
+        position: relative;
+        z-index: 1;
+    }
+    .container #logo>h1 a{
+        position: relative;
+        display: block;
+        width: 50%;
+        margin: 0 auto; 
+    }
+    .container #logo:hover img{
+        filter: none;
+    }
+    .container #logo .text{
+        text-align: center;
+    }
+    .container #logo .text>h6{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: -20px;
+    }
+    .container #logo .text>p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    /* 바로가기 버튼 */
+    .container #logo button{
+        position: absolute;
+        display: block;
+        bottom: 0; left: 0; right: 0;
+        height: 50px;
+        z-index: 1;
+        margin: 20px;
+        border: none;
+        outline: none;
+        background-color: var(--mainC);
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+    }
+    /* 모바일용 언어 */
+    .mo-lang{
+        position: absolute;
+        z-index: 2;
+        top: 15px; right: 15px;
+    }
+    .mo-lang .lang-btn{
+        width: 120px; height: 30px;
+        border: 2px solid var(--mainC);
+        border-radius: 50px;
+        font-family: "Dosis", sans-serif;
+        color: var(--mainC);
+    
+    }
+    .mo-lang .lang-btn>a{
+        display: inline-block;
+        width: 100%; height: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        text-indent: 39px;
+        background: url(../img/language.svg) 10px center no-repeat;
+        filter: invert(50%) sepia(53%) saturate(809%) hue-rotate(165deg) brightness(89%) contrast(78%);
+    }
+    .mo-lang .lang-btn .lang-list{
+        display: none;
+    }
+    .mo-lang .lang-btn .lang-list>li{
+        width: 100%; height: 30px;
+        margin-top: 10px;
+        border: 1px solid #aaa;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    .mo-lang .lang-btn .lang-list>li>a{
+        display: block;
+        width: 100%; height: 100%;
+        background-color: rgba(255,255,255,0.5);
+        line-height: 30px;
+        text-align: center;
+        color: #333;
+        font-size: 14px;
+        font-family: 500;
+        font-family: 'Pretendard';
+    }
+    .mo-lang .lang-btn .lang-list>li:hover>a{
+        background-color: rgba(253, 227, 109, 0.5);
+    }
+    /* 로고 배경(비디오 형식) */
+    .videoBG{
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%; width: 100%;
+        z-index: -1px;
+        opacity: 0.2;
+    }
+    .videoBG__content{
+        width: 100%; height: 100%;
+        object-fit: cover;
+    }
+    /* 언어 */
+    .container .lang{
+        display: none;
+    }
+    /* 앱 다운로드 */
+    .container .appDown{
+        width: 100%;
+        flex-direction: row;
+        padding: 20px 5px !important;
+        background-color: #000;
+    }
+    .container .appDown a{
+        width: 49%; height: 60px;
+        background-color: #000;
+        border: 3px double #fff;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .container .appDown a:last-child{
+        border-radius: 15px;
+        border-top: 3px double #fff;
+    }
+    .container .appDown img{
+        height: 100%; aspect-ratio: 1/1;
+    }
+    .container .appDown span{
+        display: inline-block;
+        width: 75%;
+        margin-left: 5px;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        letter-spacing: 0;
+    }
+    .container .appDown span::before{
+        content: attr(data-name);
+    }
+    /* 고객문의 */
+    .container .contact{
+        width: 100%; height: 400px;
+        /* aspect-ratio: 1/1; */
+        display: inline-block;
+        margin: 20px 0;
+    }
+        
+    .container .contact .notice>li>a>i{
+        width: 20px; height: 100%;
+        line-height: 39px;
+        font-size: 17px;
+        color: var(--pointC);
+    }
+    .container .contact .quest>li>a>i{
+        width: 20px; height: 100%;
+        line-height: 39px;
+        font-size: 17px;
+        color: var(--pointC2);
+    }
+    .container .contact .notice>li .contText,
+    .container .contact .quest>li .contText{
+        display: inline-block;
+        width: calc(100% - (20px + 100px)); height: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        vertical-align: middle;
+        line-height: 39px;
+        font-size: 14px;
+    }
+    .container .contact .notice>li .date{
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        width: 70px; height: 100%;
+        text-align: right;
+        color: #999;
+        font-size: 13px;
+        vertical-align: middle;
+        line-height: 39px;
+    }
+    .container .contact .quest .answer{
+        width: 100%; height: 100%;
+        background-color: #efefef;
+        font-size: 14px;
+        padding: 15px;
+        line-height: 20px;
+        display: none;
+        overflow: scroll;
+    }
+
+
+
+
+
+    /* 슬라이드 */
+    .container .slide{
+        display: block;
+        width: 100%; height: 300px;
+        padding: 15px !important;
+    }
+    .container .slide ul{
+        box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+    .container .slide .slideList{
+        position: absolute;
+        z-index: var(--slideIdx);
+        width: 100%; height: 100%;
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    .container .slide .slideList h4{
+        font-size: 16px;
+    }
+    .container .slide .slideList h2{
+        font-size: 28px;
+    }
+    .container .slide .slideList p{
+        font-size: 14px;
+    }
+    .container .slide .slideList p>br{
+        display: inline-block;
+    }
+    
+
+    /* contents */
+    .contents{
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(3, 450px);
+        row-gap: 20px;
+        margin-bottom: 0px;
+    }
+
+    .contents>article{
+        background-color: #fff !important;
+        width: 100%; height: 450px;
+        text-align: center;
+        padding: 0 !important;
+    }
+
+    .contents>article:hover{
+        flex: 1;
+    }
+    .contents .conText{
+        display: none;
+    }
+    .contents .mo-conText{
+        width: 100%; height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+    .contents .mo-conText i{
+        width: 67px;
+        font-size: 50px;
+        background: linear-gradient(to right top, #1686d6 50%, #f6b14b 50%);
+        color: transparent;
+        -webkit-background-clip: text;
+        margin-right: 20px;
+    }
+    .contents .mo-conText>div{
+        text-align: left;
+        color: #333;
+        width: 260px;
+    }
+    .contents .mo-conText h3{
+        display: block;
+    }
+    .contents .mo-conText h3>span{
+        color: var(--mainC);
+    }
+    .contents .mo-conText p{
+        font-size: 0.9rem;
+    }
+    .contents .contentForm{
+        height: calc(100% - 80px);
+    }
+
+    /* 타슈 정보 */
+    .contents .adoutTashu .mo-contentForm{
+        width: 100%; height: 370px
+    }
+    .contents .adoutTashu .mo-contentForm>div{
+        width: 100%; height: 100%;
+    }
+    .contents .adoutTashu .mo-contentForm ul{
+        width: 400%; height: 100%;
+    }
+    .contents .adoutTashu .mo-contentForm ul>li{
+        width: calc(100% / 4); height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    .contents .adoutTashu .img{
+        margin-top: 20px;
+        width: 180px; height: 180px;
+        border-radius: 500px;
+        background-color: #eef8ff;
+    }
+    .contents .adoutTashu .img>img{
+        height: 90%;
+    }
+    .contents .adoutTashu .mo-contentForm h5{
+        color: var(--mainC);
+        font-size: 20px;
+        letter-spacing: -2px;
+        margin: 10px 0;
+    }
+    .contents .adoutTashu .mo-contentForm .formInfo{
+        font-size: 0.95rem;
+        word-break: keep-all;
+        line-height: 25px;
+        color: #333;
+        font-weight: 500;
+        letter-spacing: -1.2px;
+    }
+
+
+    /* 이용 안내 */
+    .contents .using .conBox .swiper-scrollbar{
+        display: none;
+    }
+    .contents .using .conTitle>li.active{
+        border-radius: 0;
+    }
+    .contents .using .conBox>li{
+        padding: 0;
+    }
+    .contents .using .conBox .swiper-slide h5{
+        margin-top: 10px;
+    }
+    .contents .using .conBox .time ul{
+        width: 78%;
+        margin: 0 auto;
+    }
+    .contents .using .conBox .time ul>li{
+        text-align: left;
+        padding: 5px 4vw;
+    }
+    .contents .using .conBox .time ul>li>b{
+        margin-right: 10px;
+    }
+    .contents .using .conBox .time ul>li:not(:last-child){
+        border-bottom: 1px dashed #a5a5a5;
+    }
+
+    /* 대여소 조회 */
+    
+    /* footer */
+    footer{
+        display: block;
+        width: 100%;
+        background-color: #333;
+        color: #efefef;
+    }
+    footer .link{
+        width: 100%;
+        height: 40px;
+        background-color: #5c5c5c;
+        align-items: center;
+        color: #efefef;
+        padding: 0 10px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    footer .link>li{
+        color: inherit;
+    }
+    footer .comInfo p{
+        padding: 10px;
+        word-break: keep-all;
+        width: 78%;
+    }
+    footer .cotrolCen{
+        position: relative;
+        width: 100%; height: 100px;
+        background-color: #fff;
+        margin: 0;
+        text-align: left;
+        justify-content:start;
+    }
+    footer .cotrolCen .text{
+        font-size: 14px;
+        color: #333;
+        margin-left: 20px;
+    }
+    footer .cotrolCen .callBtn{
+        position: absolute;
+        color: var(--pointC);
+        font-size: 40px;
+        right: 20px;
+    }
+}
